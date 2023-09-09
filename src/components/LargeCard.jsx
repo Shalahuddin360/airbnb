@@ -4,7 +4,7 @@ const LargeCard = ({img,title,description,buttonText}) => {
     return (
         <section className="relative py-7">
             <div className="relative h-96 min-w-[300px]">
-            <Image src={img} layout="fill" className="rounded-lg"/>
+            <Image src={img} layout="fill" className="rounded-lg" alt="largeImage" />
             </div>
             <div className="absolute font-semibold  left-16  text-white top-16">
                 <h3 className="text-5xl mb-2">{title}</h3>

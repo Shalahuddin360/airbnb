@@ -1,8 +1,12 @@
+"use client"
 import logo from "@/assets/logo.png";
 import Image from "next/image";
+import { useState } from "react";
 import { AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai';
 import { FaGlobe, FaUserCircle } from 'react-icons/fa';
 const Header = () => {
+  const [searchInput,setSearchInput] = useState("")
+  console.log(searchInput);
   return (
     <header className="sticky top-0 z-50 flex flex-row items-center justify-between gap-3 md:gap-0 bg-white shadow-md p-5 md:px-10 ">
       {/* left  */}
@@ -18,7 +22,7 @@ const Header = () => {
       {/* middle  */}
 
       <div className="flex items-center md:border-2 rounded-full px-3 py-2 md:shadow-sm">
-        <input type="text" className="bg-transparent flex-grow outline-none md:pl-5  text-gray-600 placeholder-gray-400" placeholder="Start Your Search" />
+        <input onChange={(e)=>setSearchInput(e.target.value)}  value={searchInput} type="text" className="bg-transparent flex-grow outline-none md:pl-5  text-gray-600 placeholder-gray-400" placeholder="Start Your Search" />
         <AiOutlineSearch className="hidden lg:inline-flex w-6 h-6 lg:bg-red-400 p-2  rounded-full text-white md:mx-2"/>
         {/* <svg
           xmlns="http://www.w3.org/2000/svg"
