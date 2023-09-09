@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "image": "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg",
+    "location": "Rajshahi",
+    "distance": "4-5 hour drive",
+    "transport_fare": 356,
+    "rating": 4.9
+  },
+  {
+    "id": 2,
+    "image": "https://a0.muscache.com/im/pictures/e25a9b25-fa98-4160-bfd1-039287bf38b6.jpg",
+    "location": "Dinajpur",
+    "distance": "45 minutes drive",
+    "transport_fare": 50,
+    "rating": 2.5
+  },
+  {
+    "id": 3,
+    "image": "https://a0.muscache.com/im/pictures/prohost-api/Hosting-46761225/original/11058c0d-fac8-4035-8f16-8b3abe7441cd.jpeg",
+    "location": "Khulna",
+    "distance": "6-7 hour drive",
+    "transport_fare": 400,
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-820950793239599563/original/d5c1f686-f06a-4b65-9f55-32e19dc0b23f.jpeg",
+    "location": "Rangpur",
+    "distance": "3 hour drive",
+    "transport_fare": 100,
+    "rating": 3.9
+  },
+
+  {
+    "id": 5,
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-820954888871612167/original/f37e01a9-cb1a-446d-be7e-c1d62d1f1c23.jpeg",
+    "location": "Joypurhat",
+    "distance": "4-5 hour drive",
+    "transport_fare": 230,
+    "rating": 3.1
+  },
+  {
+    "id": 6,
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-826025597172937112/original/d6bbe2ca-9337-4a7e-a5d3-ca8fe72821db.jpeg?im_w=1200",
+    "location": "Parbatipur",
+    "distance": "40 minutes drive",
+    "transport_fare": 40,
+    "rating": 3.5
+  },
+  {
+    "id": 7,
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-807995199727408777/original/3ba641e8-f9be-41cb-b834-aba9695726fa.jpeg",
+    "location": "Syedpur",
+    "distance": "2-3 hour drive",
+    "transport_fare": 150,
+    "rating": 4.7
+  },
+  {
+    "id": 8,
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-826732383054098647/original/457337ee-af64-462f-90d0-b9fa1ce98a73.jpeg",
+    "location": "Dhaka",
+    "distance": "8-9 hour drive",
+    "transport_fare": 850,
+    "rating": 4.6
+  }
+]
