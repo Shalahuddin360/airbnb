@@ -2,13 +2,28 @@
 import logo from "@/assets/logo.png";
 import Image from "next/image";
 import { useState } from "react";
+import { DateRangePicker } from "react-date-range";
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
 import { AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai';
 import { FaGlobe, FaUserCircle } from 'react-icons/fa';
 const Header = () => {
-  const [searchInput,setSearchInput] = useState("")
-  console.log(searchInput);
+  const [searchInput,setSearchInput] = useState("");
+  const [startDate,setStartDate] = useState(new Date())
+  const [endDate,setEndDate] = useState(new Date())
+  // console.log(searchInput);
+  const selectionRange = {
+    startDate:startDate,
+    endDate:endDate,
+    key:'selection'
+  }
+  const handleSelect =(ranges)=>{
+    console.log(ranges)
+     setStartDate(ranges.selection.startDate);
+     setEndDate(ranges.selection.endDate)
+  }
   return (
-    <header className="sticky top-0 z-50 flex flex-row items-center justify-between gap-3 md:gap-0 bg-white shadow-md p-5 md:px-10 ">
+    <header className="sticky top-0 z-50 grid grid-cols-3 gap-3 md:gap-0 bg-white shadow-md p-5 md:px-10">
       {/* left  */}
       <div className="relative flex items-center h-10 cursor-pointer my-auto">
         <Image
@@ -48,6 +63,18 @@ const Header = () => {
          <FaUserCircle/>
          </div>
       </div>
+       {
+        searchInput && (
+          <div>
+             <DateRangePicker 
+             ranges={[selectionRange]}
+             minDate={new Date()}
+             rangeColors={["#FD5B61"]}
+             onChange={handleSelect}
+             />
+          </div>
+        )
+       }
     </header>
   );
 };
